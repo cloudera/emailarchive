@@ -1,0 +1,8 @@
+- SmallFileConverter, WholeFileInputFormat/Reader are from Tom Whites 'Hadoop - The Definitive Guide'.
+
+To run the sample, take the following steps:
+1. Put sample emails from data folder into HDFS
+2. Run hadoop job:
+   hadoop jar convertsearch.jar ConvertEmailsToSequence <sample email dir> <output dir>
+   hadoop jar convertsearch.jar SearchEmail <sequence file dir> 
+3. The sample data contains 1K .msg files (all copies) and the results in your /tmp dir should be identical to this
